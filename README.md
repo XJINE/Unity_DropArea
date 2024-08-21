@@ -1,4 +1,4 @@
-# Unity_DropAreaSample
+# Unity_DropArea
 
 <img src="https://github.com/XJINE/Unity_DropArea/blob/main/Screenshot.png" width="100%" height="auto" />
 
