@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace UnityEditor
 {
@@ -12,6 +11,11 @@ namespace UnityEditor
 
             GUI.Box(dropArea, message);
 
+            Draw(GUILayoutUtility.GetLastRect(), action);
+        }
+
+        public static void Draw(Rect dropArea, Action<UnityEngine.Object> action)
+        {
             if ((Event.current.type != EventType.DragUpdated
               && Event.current.type != EventType.DragPerform)
               || !dropArea.Contains(Event.current.mousePosition))
